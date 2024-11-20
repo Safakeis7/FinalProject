@@ -1,4 +1,5 @@
-﻿namespace FinalProject.Models
+﻿
+namespace FinalProject.Models
 {
     public class Cartoon
     {
@@ -18,5 +19,9 @@
             MainCharacter = mainCharacter;
         }
 
+        public static implicit operator Cartoon(List<Cartoon> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
