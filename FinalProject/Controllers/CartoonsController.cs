@@ -29,17 +29,25 @@ namespace FinalProject.Controllers
         }
 
         // GET: api/Cartoons/5
-        [HttpGet("{id}")]
-        public IActionResult GetCartoon(int id)
+        [HttpGet("{id?}")]
+        public async Task<IActionResult> GetCartoon(int? id)
         {
-            Cartoon cartoon = _context.Cartoon.Find(id);
-
-            if (cartoon == null)
+            if (id == null || id == 0)
             {
-                return NotFound();
+                var cartoons = await _context.Cartoon.Take(5).ToListAsync();
+                return Ok(cartoons);
             }
+            else
+            {
+                var cartoon = await _context.Cartoon.FindAsync(id);
 
-            return Ok(cartoon);
+                if (cartoon == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(cartoon);
+            }
         }
 
         // POST: api/Cartoons
