@@ -1,4 +1,4 @@
-﻿namespace Group3WebAPI.Models
+﻿namespace FinalProject.Models
 {
     public class Hobby
     {

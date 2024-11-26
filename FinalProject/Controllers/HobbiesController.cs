@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Group3WebAPI.Data;
-using Group3WebAPI.Models;
+using FinalProject.Data;
+using FinalProject.Models;
 
-namespace Group3WebAPI.Controllers
+namespace FinalProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class HobbiesController : ControllerBase
     {
-        private readonly Group3WebAPIContext _context;
+        private readonly FinalProjectContext _context;
 
-        public HobbiesController(Group3WebAPIContext context)
+        public HobbiesController(FinalProjectContext context)
         {
             _context = context;
         }
