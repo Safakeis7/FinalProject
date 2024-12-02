@@ -1,4 +1,4 @@
-﻿
+﻿//Vy Huynh - Group 6
 namespace FinalProject.Models
 {
     public class Cartoon
