@@ -18,5 +18,7 @@ namespace FinalProject.Data
         public DbSet<FinalProject.Models.Cartoon> Cartoon { get; set; } = default!;
         public DbSet<FinalProject.Models.Songs> Songs { get; set; } = default!;
         public DbSet<FinalProject.Models.BasketballTeams> BasketballTeams { get; set; } = default!;
+        public DbSet<FinalProject.Models.Hobby> Hobby { get; set; } = default!;
+
     }
 }
