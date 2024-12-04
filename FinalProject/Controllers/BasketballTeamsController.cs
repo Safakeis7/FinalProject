@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using FinalProject.Data;
 using FinalProject.Models;
 
+// Sam Epling - Group 6
 namespace FinalProject.Controllers
 {
     [Route("api/[controller]")]

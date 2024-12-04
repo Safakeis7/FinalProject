@@ -2,6 +2,7 @@
 {
     public class BasketballTeams
     {
+        // Sam Epling - Group 6
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public DateOnly DateFounded { get; set; }
