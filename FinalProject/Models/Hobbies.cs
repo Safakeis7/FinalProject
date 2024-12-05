@@ -1,4 +1,5 @@
-﻿namespace FinalProject.Models
+﻿//Mary Mungai - Group 6
+namespace FinalProject.Models
 {
     public class Hobby
     {
